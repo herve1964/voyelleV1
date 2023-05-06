@@ -36,6 +36,8 @@ class _HomeScreenState extends State<HomeScreen> {
 
           ElevatedButton(
               onPressed: () {
+                calculeconsonnestotal = 0;
+
                 setState(() {});
               },
               style: const ButtonStyle(
@@ -72,6 +74,8 @@ class _HomeScreenState extends State<HomeScreen> {
         compteur++;
       }
     }
+    calculeconsonnestotal = calculeconsonnestotal + compteur;
+
     return compteur;
   }
 
